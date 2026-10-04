@@ -179,7 +179,7 @@ function playback(q){
     caret.remove();
     say(0, 'זה היה כל כך קשה?');
     await wait(1700);
-    location.href = GEMINI_URL(q);
+    location.href = 'https://www.google.com/search?udm=50&q=' + encodeURIComponent(q);
   })();
 }
 </script>
